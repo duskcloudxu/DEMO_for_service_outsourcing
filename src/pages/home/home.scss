@@ -1,11 +1,14 @@
 page-home {
-ion-slides{
-  height: 30%;
-  .swiper-pagination-bullet{
-    background: #8b8f99;
+  ion-content {
+    background-color: #efefef!important;
+    ion-slides {
+      height: 30%;
+      .swiper-pagination-bullet {
+        background: #8b8f99;
+      }
+      .swiper-pagination-bullet-active {
+        background: white;
+      }
+    }
   }
-  .swiper-pagination-bullet-active{
-    background: white;
-  }
-}
 }

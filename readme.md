@@ -10,7 +10,16 @@ contract->合同
 > 好吧我知道这个容易造成误解但是我们又不写contact
 
 about->我的
-## 开发日志
+## 开发注意事项!important
+### 1. 
+图片不能用相对路径，否则会造成安卓无法读取的情况，统一放在
+> asset/imgs/
+
+目录下，填写src目录时用例为：
+```
+<img src="assets/imgs/myLawyer.png" margin-top="10px">
+```
+## Todo-list
 ###关于tabs中的图标：
 暂时先拿其他图标应付下，查了下这个在各个系统中都会出现不一样的情况，估计得自己找图自己改。
 
