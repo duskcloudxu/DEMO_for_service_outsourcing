@@ -1,3 +1,19 @@
 page-contract {
+  ion-header {
+    .toolbar-background-md {
+      background-color: rgba(56, 212, 196, 1) !important;
+
+    }
+    ion-navbar {
+    }
+  }
+  .contractNav {
+    height: 50px;
+  }
+  .contractMid {
+    ion-col {
+      height: 62.5px;
+    }
+  }
 
 }

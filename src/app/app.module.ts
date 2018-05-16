@@ -9,6 +9,10 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs'
 import { LoginPage } from '../pages/login/login';
 import { ContractPage } from '../pages/contract/contract';
+import { ContractConsultantPage } from '../pages/contract-consultant/contract-consultant';
+import { ContractManagementPage } from '../pages/contract-management/contract-management';
+import { ContractSupervisionPage } from '../pages/contract-supervision/contract-supervision';
+import { ContractWritingPage } from '../pages/contract-writing/contract-writing';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,12 +26,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     LoginPage,
     ContractPage,
+    ContractConsultantPage,
+    ContractManagementPage,
+    ContractSupervisionPage,
+    ContractWritingPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp,{
       tabsHideOnSubPages: 'true',         //ionic3隐藏全部子页面tabs
-      mode: 'md'          //把所有平台设置为iOS风格：
+      mode: 'md'          //把所有平台设置为md风格：
     })
 
   ],
@@ -40,6 +48,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     LoginPage,
     ContractPage,
+    ContractConsultantPage,
+    ContractManagementPage,
+    ContractSupervisionPage,
+    ContractWritingPage,
   ],
   providers: [
     StatusBar,

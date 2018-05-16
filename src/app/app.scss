@@ -14,3 +14,38 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-content {
+  background-color: #efefef!important;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex{
+  display: flex;
+}
+.flex-grow{
+  flex-grow: 1;
+}
+.cancelTitleWidth{
+  .toolbar-title{
+    width: inherit;
+  }
+}
+.backgroundBox{
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  .background{
+    position: absolute;
+    width: 100%;
+  }
+  .background_expand{
+    position: relative;
+    display: none;
+  }
+}
+.testBox{
+  border: red 1px solid;
+}
