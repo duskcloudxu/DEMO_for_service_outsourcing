@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ContractPage } from '../contract/contract';
 
 /**
  * Generated class for the ContractManagementPage page.
@@ -17,7 +18,9 @@ export class ContractManagementPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  toContract() {
+    this.navCtrl.pop();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractManagementPage');
   }
