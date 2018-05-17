@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { ContractPage } from '../contract/contract';
 /**
  * Generated class for the ContractConsultantPage page.
  *
@@ -17,7 +17,9 @@ export class ContractConsultantPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  toContract() {
+    this.navCtrl.push(ContractPage);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractConsultantPage');
   }
