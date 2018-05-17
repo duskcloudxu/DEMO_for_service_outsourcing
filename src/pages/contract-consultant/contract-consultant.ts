@@ -17,7 +17,7 @@ export class ContractConsultantPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  toContract() {
+  to() {
     this.navCtrl.push(ContractPage);
   }
   ionViewDidLoad() {
