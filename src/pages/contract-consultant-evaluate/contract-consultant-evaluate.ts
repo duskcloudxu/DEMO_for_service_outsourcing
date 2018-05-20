@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContractPage } from '../contract/contract';
-import { ContractManagementAllfilePage } from '../contract-management-allfile/contract-management-allfile';
+import { ContractConsultantPage } from '../contract-consultant/contract-consultant';
 
 /**
- * Generated class for the ContractManagementPage page.
+ * Generated class for the ContractConsultantEvaluatePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,21 +12,18 @@ import { ContractManagementAllfilePage } from '../contract-management-allfile/co
 
 @IonicPage()
 @Component({
-  selector: 'page-contract-management',
-  templateUrl: 'contract-management.html',
+  selector: 'page-contract-consultant-evaluate',
+  templateUrl: 'contract-consultant-evaluate.html',
 })
-export class ContractManagementPage {
+export class ContractConsultantEvaluatePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  toContract() {
+  toContractConsultant() {
     this.navCtrl.pop();
   }
-  toAllfile() {
-    this.navCtrl.push(ContractManagementAllfilePage);
-  }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContractManagementPage');
+    console.log('ionViewDidLoad ContractConsultantEvaluatePage');
   }
 
 }

@@ -13,6 +13,8 @@ import { ContractConsultantPage } from '../pages/contract-consultant/contract-co
 import { ContractManagementPage } from '../pages/contract-management/contract-management';
 import { ContractSupervisionPage } from '../pages/contract-supervision/contract-supervision';
 import { ContractWritingPage } from '../pages/contract-writing/contract-writing';
+import { ContractConsultantEvaluatePage } from '../pages/contract-consultant-evaluate/contract-consultant-evaluate';
+import { ContractManagementAllfilePage } from '../pages/contract-management-allfile/contract-management-allfile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,6 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContractManagementPage,
     ContractSupervisionPage,
     ContractWritingPage,
+    ContractConsultantEvaluatePage,
+    ContractManagementAllfilePage,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContractManagementPage,
     ContractSupervisionPage,
     ContractWritingPage,
+    ContractConsultantEvaluatePage,
+    ContractManagementAllfilePage,
   ],
   providers: [
     StatusBar,

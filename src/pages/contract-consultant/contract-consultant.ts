@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContractPage } from '../contract/contract';
+import { ContractConsultantEvaluatePage } from '../contract-consultant-evaluate/contract-consultant-evaluate';
 /**
  * Generated class for the ContractConsultantPage page.
  *
@@ -19,6 +20,9 @@ export class ContractConsultantPage {
   }
   toContract() {
     this.navCtrl.pop();
+  }
+  toContractConsultantEvaluate() {
+    this.navCtrl.push(ContractConsultantEvaluatePage);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractConsultantPage');

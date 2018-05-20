@@ -10,7 +10,16 @@
   <img class="background" src="assets/imgs/management.png">
     <ion-row class="back">
       <ion-col col-1 class="testBox" (click)="toContract()"></ion-col>
+      <ion-col col-1 class="testBox" offset-9 (click)="toContract()"></ion-col>
+
+      <ion-col col-1 class="testBox" (click)="toContract()"></ion-col>
+
     </ion-row>
   </div>
+<ion-row class="contractMid">
+  <ion-col col-3 class="testBox" (click)="toWriting()"></ion-col>
+  <ion-col col-3 class="testBox" offset-1 (click)="toSupervision()"></ion-col>
+  <ion-col col-3 class="testBox" offset-1 (click)="toAllfile()"></ion-col>
+</ion-row>
 
 </ion-content>
