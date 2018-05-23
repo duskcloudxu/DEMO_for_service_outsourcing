@@ -15,12 +15,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 export class ContractWritingPage {
   private category:any[]=["劳动人事","买卖租赁","借款担保","公司经营","服务合同","技术知产","承揽合同" ,"建设工程","运输仓储","其他合同","我的合同"];
-  private imgsrc:any[]=[
-    "assets/imgs/contract1.png",
-    "assets/imgs/contract2.png",
-    "assets/imgs/contract3.png",
-    "assets/imgs/contract4.png",
-  ];
   private detailInCategory:any[]=[
     ["劳动合同","劳务合同","实习声明","员工保密协议","员工股权激励协议","竞业禁止协议",],
     ["投招标买卖合同","国际商业合同","商品购销合同","软件买卖合同","房屋租赁合同","机械租赁合同","融资租赁合同",],
