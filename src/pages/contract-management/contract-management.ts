@@ -25,6 +25,7 @@ export class ContractManagementPage {
   toAllfile() {
     this.navCtrl.push(ContractManagementAllfilePage);
   }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractManagementPage');
   }

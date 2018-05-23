@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 /**
  * Generated class for the ContractWritingPage page.
@@ -35,13 +35,18 @@ export class ContractWritingPage {
     ["合伙协议","劳务合同"],
   ];
   private currentIndex=0;
+  @ViewChild('container') itemList
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractWritingPage');
-    console.log(this.detail);
+    console.log(this.itemList);
   }
+  changeCategory(index){
+    this.currentIndex=index;
+  }
+
 
 
 

@@ -27,7 +27,7 @@ export class ContractPage {
   toSupervision(){
     this.navCtrl.push(ContractSupervisionPage);
   }
-  toManageement(){
+  toManagement(){
     this.navCtrl.push(ContractManagementPage);
   }
   toConsultant(){
