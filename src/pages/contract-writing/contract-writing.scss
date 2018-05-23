@@ -1,3 +1,49 @@
-page-contract-writing {
+@import "../../app/app";
 
+page-contract-writing {
+  .selfNavBar {
+    height: 8%;
+  }
+  .searchBar {
+    height: 8%;
+    border-top: 1PX solid #efefef;
+  }
+  .content {
+    min-height: 84%;
+    overflow: scroll;
+    .category {
+      background: white;
+      .item {
+        margin-left: 5px;
+        margin-right: 5px;
+
+        width: 100%;
+
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        color: black;
+        text-decoration: none;
+        background: white;
+        &:focus {
+          color: white;
+          border-radius: 5px;
+          background: #fc9b00;
+
+        }
+      }
+    }
+    .previewDisplay {
+      ion-scroll{
+        height: 100%;
+        .preview {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

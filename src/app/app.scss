@@ -14,6 +14,7 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$myColorBlue:#23d1c0;
 ion-content {
   background-color: #efefef!important;
 }
@@ -49,3 +50,38 @@ ion-content {
 .testBox{
   border: red 1px solid;
 }
+.selfNavBar{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  img{
+    height: 30px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .helper{
+    color: $myColorBlue;
+  }
+}
+.searchBar{
+  background:#ffffff;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .searchBarinner{
+    width: 100%;
+    border: solid #e0e0e0 1px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    img{
+      height: 20px;
+    }
+  }
+}
+
