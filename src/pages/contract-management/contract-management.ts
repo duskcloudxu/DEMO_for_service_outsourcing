@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContractPage } from '../contract/contract';
 import { ContractManagementAllfilePage } from '../contract-management-allfile/contract-management-allfile';
+import { ContractManagementFinishPage } from '../contract-management-finish/contract-management-finish';
 
 /**
  * Generated class for the ContractManagementPage page.
@@ -25,7 +26,9 @@ export class ContractManagementPage {
   toAllfile() {
     this.navCtrl.push(ContractManagementAllfilePage);
   }
-
+  toFinish(){
+    this.navCtrl.push(ContractManagementFinishPage);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractManagementPage');
   }
