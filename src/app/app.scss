@@ -15,6 +15,10 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 $myColorBlue:#23d1c0;
+::-webkit-scrollbar {
+  display: none !important;
+}
+
 ion-content {
   background-color: #efefef!important;
 }

@@ -3,9 +3,16 @@ page-contract-writing-preview {
     padding: 10px;
   }
   .previewSlides {
+    height: 180px;
+    margin-top: 10px;
+    display: flex;
+    overflow: scroll;
+    padding-top: 10px;
+    .previewItem {
 
+    }
   }
-  .background{
+  .background {
     position: absolute;
     bottom: 0px;
     width: 100%;

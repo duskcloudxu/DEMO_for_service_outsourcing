@@ -7,14 +7,28 @@
 
 <ion-content>
   <div class="selfNavBar">
-    <img src="assets/imgs/leftArrow.png" alt="" (click)="back()" >
+    <img src="assets/imgs/leftArrow.png" alt="" (click)="back()">
     <div class="flex-grow"></div>
     <div class="title">商品代销合同</div>
     <div class="flex-grow"></div>
     <img src="assets/imgs/star.png" alt="">
   </div>
-  <div class="previewSlides">
 
-  </div>
+  <ion-scroll scrollX="true" direction="x" class="previewSlides">
+    <ion-row nowrap="true" >
+      <ion-col col-4>
+        <img src="assets/imgs/previewContract1.png" class="previewItem">
+      </ion-col>
+      <ion-col col-4>
+        <img src="assets/imgs/previewContract2.png" class="previewItem">
+      </ion-col >
+      <ion-col col-4>
+        <img src="assets/imgs/previewContract3.png" class="previewItem">
+      </ion-col>
+      <ion-col col-4>
+        <img src="assets/imgs/previewContract4.png" class="previewItem">
+      </ion-col>
+    </ion-row>
+  </ion-scroll>
   <img src="assets/imgs/preivew.png" alt="" class="background">
 </ion-content>
