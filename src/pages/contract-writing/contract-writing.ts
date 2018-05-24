@@ -1,5 +1,8 @@
 import { Component,ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {ContractWritingPreviewPage} from '../contract-writing-preview/contract-writing-preview'
+import{BackListenerDirective} from "../../directives/back-listener/back-listener";
+
 /**
  * Generated class for the ContractWritingPage page.
  *
@@ -29,7 +32,7 @@ export class ContractWritingPage {
     ["合伙协议","劳务合同"],
   ];
   private currentIndex=0;
-  @ViewChild('container') itemList
+  @ViewChild('container') itemList;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }
@@ -39,6 +42,12 @@ export class ContractWritingPage {
   }
   changeCategory(index){
     this.currentIndex=index;
+  }
+  toPreview(){
+    this.navCtrl.push(ContractWritingPreviewPage);
+  }
+  back(){
+    this.navCtrl.pop();
   }
 
 
