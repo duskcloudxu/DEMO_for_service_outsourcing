@@ -29,6 +29,8 @@ import { ContractManagementYouwriting2Page } from '../pages/contract-management-
 import { ContractManagementYouwriting2DatailPage } from '../pages/contract-management-youwriting2-datail/contract-management-youwriting2-datail';
 import { ContractManagementIwritingPage } from '../pages/contract-management-iwriting/contract-management-iwriting';
 import { ContractManagementIwriting2Page } from '../pages/contract-management-iwriting2/contract-management-iwriting2';
+import { ContractWritingPreviewEditPage } from '../pages/contract-writing-preview-edit/contract-writing-preview-edit';
+
 
 import {BackListenerDirective} from "../directives/back-listener/back-listener"
 
@@ -64,6 +66,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ContractManagementYouwriting2DatailPage,
     ContractManagementIwritingPage,
     ContractManagementIwriting2Page,
+    ContractWritingPreviewEditPage,
   ],
   imports: [
     BrowserModule,
@@ -101,6 +104,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ContractManagementYouwriting2DatailPage,
     ContractManagementIwritingPage,
     ContractManagementIwriting2Page,
+    ContractWritingPreviewEditPage,
   ],
   providers: [
     StatusBar,

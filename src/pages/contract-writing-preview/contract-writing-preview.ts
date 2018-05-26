@@ -1,6 +1,7 @@
 import {Component, ViewChild,ViewContainerRef} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {Slides} from 'ionic-angular';
+import{ ContractWritingPreviewEditPage } from "../contract-writing-preview-edit/contract-writing-preview-edit"
 
 /**
  * Generated class for the ContractWritingPreviewPage page.
@@ -41,5 +42,9 @@ export class ContractWritingPreviewPage {
   back() {
     this.navCtrl.pop();
   }
+  next(){
+    this.navCtrl.push(ContractWritingPreviewEditPage)
+  }
+
 
 }
