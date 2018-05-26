@@ -1,0 +1,26 @@
+page-contract-supervision-result {
+  .backgroundBox{
+    position:relative;
+
+  }
+  .contractNav {
+    height: 50px;
+  }
+  ion-scroll{
+    margin-top: 200px;
+    height: 300px;
+    width: 100%;
+    overflow: scroll;
+  }
+  .bottomBar{
+    position: fixed;
+    bottom: 0;
+  }
+  .finish{
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    left: 50%;
+    bottom: 0;
+  }
+}

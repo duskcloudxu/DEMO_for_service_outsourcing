@@ -6,6 +6,12 @@
 -->
 
 <ion-content>
+  <div #test class="previewBox" *ngIf="isHide==0"></div>
+  <ion-slides #slides *ngIf="isHide==0" (click)="hide()">
+    <ion-slide *ngFor="let cur of PicNum;">
+      <img src="assets/imgs/previewContract{{cur}}.png"/>
+    </ion-slide>
+  </ion-slides>
   <div class="selfNavBar">
     <img src="assets/imgs/leftArrow.png" alt="" (click)="back()">
     <div class="flex-grow"></div>
@@ -13,22 +19,14 @@
     <div class="flex-grow"></div>
     <img src="assets/imgs/star.png" alt="">
   </div>
-
-  <ion-scroll scrollX="true" direction="x" class="previewSlides">
-    <ion-row nowrap="true" >
-      <ion-col col-4>
-        <img src="assets/imgs/previewContract1.png" class="previewItem">
-      </ion-col>
-      <ion-col col-4>
-        <img src="assets/imgs/previewContract2.png" class="previewItem">
-      </ion-col >
-      <ion-col col-4>
-        <img src="assets/imgs/previewContract3.png" class="previewItem">
-      </ion-col>
-      <ion-col col-4>
-        <img src="assets/imgs/previewContract4.png" class="previewItem">
-      </ion-col>
-    </ion-row>
-  </ion-scroll>
+  <div class="previewSlides">
+    <ion-scroll scrollX="true" direction="x" class="scroll">
+      <ion-row nowrap="true">
+        <ion-col col-4 *ngFor="let cur of PicNum; let i=index">
+          <img src="assets/imgs/previewContract{{cur}}.png" class="previewItem" (click)="showPic(i)">
+        </ion-col>
+      </ion-row>
+    </ion-scroll>
+  </div>
   <img src="assets/imgs/preivew.png" alt="" class="background">
 </ion-content>

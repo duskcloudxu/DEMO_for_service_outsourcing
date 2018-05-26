@@ -14,7 +14,10 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+//app里面的颜色
 $myColorBlue:#23d1c0;
+
 ::-webkit-scrollbar {
   display: none !important;
 }
@@ -22,6 +25,8 @@ $myColorBlue:#23d1c0;
 ion-content {
   background-color: #efefef!important;
 }
+
+//flex的快速书写
 .flex-center{
   display: flex;
   justify-content: center;
@@ -38,6 +43,8 @@ ion-content {
     width: inherit;
   }
 }
+
+//贴图采用的解决方案，用例参照：contract页面
 .backgroundBox{
   position: relative;
   width: 100%;
@@ -51,9 +58,14 @@ ion-content {
     display: none;
   }
 }
+
+//用来查看透明元素有没有框定所需的区域
 .testBox{
   border: red 1px solid;
 }
+
+
+//自己制作的导航栏，用例参照：contract-writing界面
 .selfNavBar{
   height: 50px;
   display: flex;
@@ -66,8 +78,9 @@ ion-content {
   .title{
     font-size: 20px;
   }
-
 }
+
+//自己制作的searchBar,用例参照：contract-writing界面
 .searchBar{
   background:#ffffff;
   height: 50px;
@@ -84,6 +97,18 @@ ion-content {
     img{
       height: 20px;
     }
+  }
+}
+
+//bottomBar，用来将图片固定在页面底下，具体参照：contract-supervision界面
+.bottomBar{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  .backImg{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 }
 

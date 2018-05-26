@@ -1,17 +1,17 @@
-
 <ion-content>
   <ion-slides pager>
     <ion-slide>
-      <div class="box banner"><img src="assets/imgs/1.jpg" /> </div>
+      <div><img src="assets/imgs/1.jpg"/></div>
     </ion-slide>
     <ion-slide>
-      <div class="box banner"><img src="assets/imgs/2.jpg" /> </div>
+      <div><img src="assets/imgs/2.jpg"/></div>
     </ion-slide>
-    <ion-slide on-slide-changed="slideHasChanged(index)">
-      <div class="box banner"><img src="assets/imgs/3.jpg" /> </div>
+    <ion-slide>
+      <div><img src="assets/imgs/3.jpg"/></div>
     </ion-slide>
   </ion-slides>
-  <img src="assets/imgs/myLawyer.png" margin-top="10px">
-  <img src="assets/imgs/myAssistant.png" margin-top="10px">
-
+  <img src="assets/imgs/myLawyer.png" >
+  <img src="assets/imgs/myAssistant.png">
+  <div class="testBox openCard" (click)="toCard()" ></div>
+  <div class="testBox openPhone" (click)="openPhone()"></div>
 </ion-content>
