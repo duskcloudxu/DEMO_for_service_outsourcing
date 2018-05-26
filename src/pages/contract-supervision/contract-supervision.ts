@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {ContractSupervisionResultPage} from "../contract-supervision-result/contract-supervision-result";
 
 /**
  * Generated class for the ContractSupervisionPage page.
@@ -21,5 +22,7 @@ export class ContractSupervisionPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractSupervisionPage');
   }
-
+  toResult() {
+    this.navCtrl.push(ContractSupervisionResultPage);
+  }
 }
