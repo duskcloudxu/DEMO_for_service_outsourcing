@@ -1,16 +1,39 @@
 page-contract-writing-preview {
+  .hide{
+    visibility: hidden;
+  }
   .selfNavBar {
     padding: 10px;
   }
-  .previewSlides {
-    height: 180px;
-    margin-top: 10px;
-    display: flex;
-    overflow: scroll;
-    padding-top: 10px;
-    .previewItem {
+  .previewBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: fade_out(black,0.5);
 
+  }
+  ion-slides{
+    z-index: 101;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 80%!important;
     }
+  }
+
+  .previewSlides {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    padding-top: 5px;
+    .scroll{
+      width: 100%;
+      height: 100%;
+    }
+
   }
   .background {
     position: absolute;

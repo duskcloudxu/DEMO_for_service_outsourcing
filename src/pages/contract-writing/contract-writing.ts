@@ -1,4 +1,4 @@
-import { Component,ViewChild } from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {ContractWritingPreviewPage} from '../contract-writing-preview/contract-writing-preview'
 import{BackListenerDirective} from "../../directives/back-listener/back-listener";
@@ -32,13 +32,15 @@ export class ContractWritingPage {
     ["合伙协议","劳务合同"],
   ];
   private currentIndex=0;
-  @ViewChild('container') itemList;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+  constructor(public navCtrl: NavController, public navParams: NavParams,private elRef:ElementRef) {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractWritingPage');
-    console.log(this.itemList);
+    let firstButton=this.elRef.nativeElement.querySelector(".item");
+    console.log(firstButton);
+
+    firstButton.focus();
+
   }
   changeCategory(index){
     this.currentIndex=index;

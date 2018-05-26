@@ -22,7 +22,7 @@
   <ion-row class="content">
     <ion-col #container class="category" col-3>
       <ion-row *ngFor="let item of category;let i=index">
-        <button class="item" (click)="changeCategory(i)">
+        <button class="item" [ngClass]="{'itemStart':currentIndex==i}" (click)="changeCategory(i)">
           {{item}}
         </button>
       </ion-row>

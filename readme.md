@@ -1,15 +1,26 @@
 # 说明
 ## 前言
 这是一个使用ionic实现的服务外包客户端，主要配置在安卓上
+## 配置
+在默认的基础上增加了call-number的模块，开发人员只需增加以下命令：
+```$xslt
+npm install
+```
+
+
 ## 页面与原型的对应
 login->登陆页面
 
 contact->会话
 
 contract->合同
+
 contract-writing->合同起草
+
 contract-supervision->合同审核
+
 contract-management->合同管理
+
 contract-consultant->法律助手
 > 好吧我知道这个容易造成误解但是我们又不写contact
 
@@ -51,7 +62,14 @@ XT 18点44分
 ***
 ### directive的尝试
 尝试做了一个back的全局驱动，然而并没有成功，也没有报错，完全没有反应，暂时放置不管，等后面研究。
+***
+### slides的滑动到某页无效[solved]
+干他娘的傻逼IONIC，slides的神秘bug使得这玩意根本无效。
 
+Edit:经检查发现，Slides如果和[ngCLass]一起使用的话会导致部分功能失效。
+
+如果用了ngIf的话会导致viewChildren
+***
 ## 参考资料
 [如何新建页面](https://www.jianshu.com/p/0f024a62ba14)
 
