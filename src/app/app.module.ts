@@ -2,7 +2,7 @@ import {NgModule, ErrorHandler} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
-// import {CallNumber} from "@ionic-native/call-number";
+import {CallNumber} from "@ionic-native/call-number";
 
 import {AboutPage} from '../pages/about/about';
 import {ContactPage} from '../pages/contact/contact';
@@ -26,7 +26,9 @@ import { ContractManagementShow1Page } from '../pages/contract-management-show1/
 import { ContractManagementShow2Page } from '../pages/contract-management-show2/contract-management-show2';
 import { ContractManagementYouwritingPage } from '../pages/contract-management-youwriting/contract-management-youwriting';
 import { ContractManagementYouwriting2Page } from '../pages/contract-management-youwriting2/contract-management-youwriting2';
-
+import { ContractManagementYouwriting2DatailPage } from '../pages/contract-management-youwriting2-datail/contract-management-youwriting2-datail';
+import { ContractManagementIwritingPage } from '../pages/contract-management-iwriting/contract-management-iwriting';
+import { ContractManagementIwriting2Page } from '../pages/contract-management-iwriting2/contract-management-iwriting2';
 
 import {BackListenerDirective} from "../directives/back-listener/back-listener"
 
@@ -59,6 +61,9 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     HomeLawyercardPage,
     ContractManagementYouwritingPage,
     ContractManagementYouwriting2Page,
+    ContractManagementYouwriting2DatailPage,
+    ContractManagementIwritingPage,
+    ContractManagementIwriting2Page,
   ],
   imports: [
     BrowserModule,
@@ -93,11 +98,14 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     HomeLawyercardPage,
     ContractManagementYouwritingPage,
     ContractManagementYouwriting2Page,
+    ContractManagementYouwriting2DatailPage,
+    ContractManagementIwritingPage,
+    ContractManagementIwriting2Page,
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    // CallNumber,
+    CallNumber,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

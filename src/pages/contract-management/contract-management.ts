@@ -6,7 +6,7 @@ import { ContractManagementFinishPage } from '../contract-management-finish/cont
 import { ContractManagementShow1Page } from '../contract-management-show1/contract-management-show1';
 import { ContractManagementShow2Page } from '../contract-management-show2/contract-management-show2';
 import { ContractManagementYouwritingPage } from '../contract-management-youwriting/contract-management-youwriting';
-
+import { ContractManagementIwritingPage } from '../contract-management-iwriting/contract-management-iwriting';
 /**
  * Generated class for the ContractManagementPage page.
  *
@@ -40,6 +40,9 @@ export class ContractManagementPage {
   }
   toYouWriting() {
     this.navCtrl.push(ContractManagementYouwritingPage);
+  }
+  toIWriting() {
+    this.navCtrl.push(ContractManagementIwritingPage);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractManagementPage');

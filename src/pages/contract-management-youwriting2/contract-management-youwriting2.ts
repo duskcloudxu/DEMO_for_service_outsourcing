@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ContractManagementYouwriting2DatailPage } from '../contract-management-youwriting2-datail/contract-management-youwriting2-datail';
+import { ContractManagementIwritingPage } from '../contract-management-iwriting/contract-management-iwriting';
 
 /**
  * Generated class for the ContractManagementYouwriting2Page page.
@@ -19,6 +21,9 @@ export class ContractManagementYouwriting2Page {
   }
   back() {
     this.navCtrl.pop();
+  }
+  detail(){
+    this.navCtrl.push(ContractManagementYouwriting2DatailPage);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractManagementYouwriting2Page');
