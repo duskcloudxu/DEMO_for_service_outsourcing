@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContractPage } from '../contract/contract';
 import { ContractManagementAllfilePage } from '../contract-management-allfile/contract-management-allfile';
 import { ContractManagementFinishPage } from '../contract-management-finish/contract-management-finish';
+import { ContractManagementShow1Page } from '../contract-management-show1/contract-management-show1';
+import { ContractManagementShow2Page } from '../contract-management-show2/contract-management-show2';
 
 /**
  * Generated class for the ContractManagementPage page.
@@ -28,6 +30,12 @@ export class ContractManagementPage {
   }
   toFinish(){
     this.navCtrl.push(ContractManagementFinishPage);
+  }
+  toShow1() {
+    this.navCtrl.push(ContractManagementShow1Page);
+  }
+  toShow2() {
+    this.navCtrl.push(ContractManagementShow2Page);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractManagementPage');

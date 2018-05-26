@@ -21,7 +21,8 @@ import {BackListenerDirective} from "../directives/back-listener/back-listener"
 import { ContractConsultantAllshowPage } from '../pages/contract-consultant-allshow/contract-consultant-allshow';
 import { ContractManagementFinishPage } from '../pages/contract-management-finish/contract-management-finish';
 import { ContractManagementFinishWorkingPage } from '../pages/contract-management-finish-working/contract-management-finish-working';
-
+import { ContractManagementShow1Page } from '../pages/contract-management-show1/contract-management-show1';
+import { ContractManagementShow2Page } from '../pages/contract-management-show2/contract-management-show2';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -45,6 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContractManagementFinishWorkingPage,
     ContractWritingPreviewPage,
     BackListenerDirective,
+    ContractManagementShow1Page,
+    ContractManagementShow2Page,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +76,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContractManagementFinishPage,
     ContractManagementFinishWorkingPage,
     ContractWritingPreviewPage,
+    ContractManagementShow1Page,
+    ContractManagementShow2Page,
   ],
   providers: [
     StatusBar,
