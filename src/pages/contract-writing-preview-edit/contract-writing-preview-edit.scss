@@ -1,3 +1,39 @@
+@import "../../app/app";
 page-contract-writing-preview-edit {
+  .selfNavBar {
+    height: 8%;
+    border-bottom: solid 1px gainsboro;
+    .helper{
+      color: $myColorBlue;
+    }
 
+  }
+  ion-scroll{
+    font-size: 18px;
+    height: 84%;
+    padding-left: 10px;
+    background: white;
+    width: 100%;
+    .title{
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .input{
+      border: none;
+      width: 40px;
+      border-bottom: solid 1px black;
+    }
+    $distanceToEdge:20px;
+    ion-row{
+      margin-top: 15px;
+      width: 100%;
+      padding-left: $distanceToEdge;
+      padding-right: $distanceToEdge;
+    }
+  }
+  .bottomBar{
+    height: 50px;
+    color: white;
+    background-color: $myColorBlue;
+  }
 }

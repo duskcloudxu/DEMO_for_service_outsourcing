@@ -20,9 +20,12 @@ export class ContractSupervisionResultPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractSupervisionResultPage');
   }
-  back() {
+  return() {
+    this.navCtrl.popToRoot();
+  }
+  back(){
     this.navCtrl.pop();
-    this.navCtrl.pop();
+
   }
 
 }

@@ -1,0 +1,131 @@
+@import "../../app/app";
+page-contract-writing-finish {
+  .previewBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: fade_out(black,0.5);
+
+  }
+  ion-slides{
+    z-index: 101;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 80%!important;
+    }
+  }
+  .selfNavBar {
+    border-bottom: solid 1px gainsboro;
+    .title {
+      margin-right: -5px;
+      font-size: 19px;
+    }
+    .save {
+      margin-left: -15px;
+      margin-right: -15px;
+      color: gainsboro;
+    }
+  }
+  .textarea {
+    padding: 5px;
+    input {
+      border: none;
+    }
+    background: white;
+    img {
+      height: 25px;
+    }
+  }
+  .previewSlides {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    padding-top: 5px;
+    .scroll {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .deadline{
+    background: white;
+    height: 40px;
+    border-bottom: solid 1px gainsboro;
+    img{
+      height: 25px!important;
+    }
+    .itemContainer{
+      padding-top: -10px;
+      overflow: hidden;
+      height: 25px;
+      width: 130px;
+      ion-item{
+        margin-top: -10px;
+      }
+    }
+  }
+  .signMethod{
+    background: white;
+    height: 40px;
+    img{
+      height: 25px;
+    }
+    .itemContainer{
+      padding-top: -10px;
+      overflow: hidden;
+      height: 25px;
+      width: 30px;
+      ion-item{
+        background: transparent;
+      }
+    }
+  }
+  .sender{
+    background: white;
+    height: 40px;
+    border-bottom: solid 1px gainsboro;
+    img{
+      height: 25px;
+      position: absolute;
+    }
+  }
+  .receiver{
+    background: white;
+    height: 40px;
+    img{
+      height: 25px;
+      margin-right: 10px;
+    }
+  }
+  .nameDecoration{
+    background: #f2f2f2;
+    border-radius: 2px;
+    font-size: 13px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .bottomBar{
+    height: 50px;
+    .store{
+      flex-grow: 7;
+      flex-basis: 0;
+      height: 100%;
+      background: white;
+      color: gray;
+    }
+    .send{
+      flex-grow: 5;
+      flex-basis: 0;
+      height: 100%;
+      background: $myColorBlue;
+      color: white;
+    }
+  }
+  ion-datetime{
+    color: gray;
+  }
+
+}

@@ -1,0 +1,23 @@
+<!--
+  Generated template for the ContractWrtingEditPartyAPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content>
+  <div class="selfNavBar">
+    <img src="assets/imgs/leftArrow.png" alt="" back-listener="" (click)="back()">
+    <div class="flex-grow"></div>
+    <div class="title">甲方（信息）</div>
+    <div class="flex-grow"></div>
+  </div>
+  <div class="textarea flex-center" padding>
+    <div margin-right="" margin-left="">甲方名称</div>
+    <input class="flex-grow input" [(ngModel)]="partyAName"/>
+  </div>
+  <img src="assets/imgs/partyA.png" alt="" margin-top="">
+  <div class="bottomBar flex-center" (click)="back()">
+    保存
+  </div>
+</ion-content>

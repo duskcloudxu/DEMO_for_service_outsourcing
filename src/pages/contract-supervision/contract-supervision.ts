@@ -25,4 +25,7 @@ export class ContractSupervisionPage {
   toResult() {
     this.navCtrl.push(ContractSupervisionResultPage);
   }
+  back(){
+    this.navCtrl.pop();
+  }
 }

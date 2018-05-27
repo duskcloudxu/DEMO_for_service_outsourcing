@@ -1,0 +1,16 @@
+page-contract-wrting-edit-party-b {
+  .selfNavBar{
+    border-bottom: solid 1px gainsboro;
+  }
+  .textarea{
+    background: white;
+    input{
+      border: none;
+    }
+  }
+  .bottomBar{
+    height: 50px;
+    color: white;
+    background-color: $myColorBlue;
+  }
+}

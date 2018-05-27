@@ -6,5 +6,131 @@
 -->
 
 <ion-content>
+  <div class="selfNavBar">
+    <img src="assets/imgs/leftArrow.png" alt="" back-listener="" (click)="back()">
+    <div class="flex-grow"></div>
+    <div class="title">填写合同</div>
+    <div class="flex-grow"></div>
+  </div>
+  <ion-scroll scrollY="true">
+    <ion-row class="flex-center title">
+      商品代销合同
+    </ion-row>
+    <ion-row class="flex" padding-right="">
+      <div class="flex-grow"></div>
+      <h5 margin-right="30px">合同编号</h5>
+    </ion-row>
+    <ion-row class="flex">
+      <div class="">甲方（委托人）：</div>
+      <input type="text" class="input flex-grow" (click)="toPartyA()" [ngModel]="partyAName">
+    </ion-row>
+    <ion-row *ngFor="let item of firstList" class="flex">
+      {{item}}
+      <input type="text" class="input flex-grow">
+    </ion-row>
+    <ion-row class="flex">
+      乙方（代销人）：
+      <input type="text" class="input flex-grow" (click)="toPartyB()" [(ngModel)]="partyBName">
+    </ion-row>
+    <ion-row *ngFor="let item of secondList" class="flex">
+      {{item}}
+      <input type="text" class="input flex-grow">
+    </ion-row>
+    <ion-row class="phrase">
+      <p>&nbsp;&nbsp;甲乙双方本着自愿、平等、互惠互利、诚实信用的原则，经充分友好协商，就乙方代售甲方
+        <input type="text" class="input ">
+        产品的相关事宜，订立如下合同条款，以资共同恪守履行。
+      </p>
+    </ion-row>
+    <ion-row class="title">
+      第一条 代售产品
+    </ion-row>
+    <ion-row>
+      1、 乙方代售甲方的产品的详细信息：代销商品、数量、价格：
+    </ion-row>
+    <ion-row padding-left="">
+      <ion-row *ngFor="let item of thirdList" class="flex">
+        {{item}}
+        <input type="text" class="input flex-grow">
+      </ion-row>
+    </ion-row>
+    <ion-row *ngFor="let item of fourthList" class="flex">
+      {{item}}
+      <input type="text" class="input flex-grow">
+    </ion-row>
+    <ion-row class="title">
+      第二条 代售期限
+    </ion-row>
+    <ion-row class="phrase">
+      <p>
+        1、本合同的代售期限为
+        <input type="text" class="input ">
+        年，从本合同签订之日起至
+        <input type="text" class="input ">
+        年
+        <input type="text" class="input ">
+        月
+        <input type="text" class="input ">
+        日
+        止。双方可根据本合同的约定提前终止或续期。
+      </p>
+    </ion-row>
+    <ion-row class="phrase">
+      <p>
+        2、乙方要求对本合同续期的，应至少在本合同期限届满前提前
+        <input type="text" class="input ">
+        个月向甲方书面提出。甲方同意的，与乙方签订续期合同。
+      </p>
+    </ion-row>
+    <ion-row class="phrase">
+      <p>
+        3、甲、乙双方约定，在本合同期限届满时，乙方满足以下条件可以续约：
+      </p>
+    </ion-row>
+    <ion-row padding-left="">
+      <ion-row *ngFor="let item of fifthList" class="flex">
+        {{item}}
+      </ion-row>
+      <ion-row class="phrase">
+        <p>
+          （4）同意向甲方支付
+          <input type="text" class="input ">
+          元的续约费；
+        </p>
+      </ion-row>
+    </ion-row>
+    <ion-row class="title">
+      第三条 佣金
+    </ion-row>
+    <ion-row padding-left="">
+      <ion-row class="phrase">
+        <p>
+          1、乙方的佣金以每次售出并签字的协议产品为基础，其收佣百分比如下：
+          <input type="text" class="input ">
+          元按
+          <input type="text" class="input ">
+          ％收佣；
+          <input type="text" class="input ">
+          元按
+          <input type="text" class="input ">
+          ％收佣。
+        </p>
+      </ion-row>
 
+      <ion-row *ngFor="let item of sixthList" class="flex">
+        {{item}}
+      </ion-row>
+    </ion-row>
+    <ion-row class="title">
+      第四条 商情报告
+    </ion-row>
+    <ion-row class="phrase">
+      <p>
+        1、乙方有权接受客户对产品的意见和申诉，并及时通知甲方，以关注甲方的切身利益为宜。
+      </p>
+    </ion-row>
+  </ion-scroll>
+  <div class="bottomBar flex-center" (click)="next()">
+    下一步
+  </div>
 </ion-content>

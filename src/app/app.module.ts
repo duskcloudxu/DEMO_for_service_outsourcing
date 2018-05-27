@@ -32,6 +32,11 @@ import { ContractManagementIwriting2Page } from '../pages/contract-management-iw
 import { ContractManagementIwriting2DetailPage } from '../pages/contract-management-iwriting2-detail/contract-management-iwriting2-detail';
 import { ContractManagementIwriting2RefusePage } from '../pages/contract-management-iwriting2-refuse/contract-management-iwriting2-refuse';
 import { ContractManagementIwriting2GoPage } from '../pages/contract-management-iwriting2-go/contract-management-iwriting2-go';
+import { ContractWritingPreviewEditPage } from '../pages/contract-writing-preview-edit/contract-writing-preview-edit';
+import {ContractWrtingEditPartyAPage} from "../pages/contract-wrting-edit-party-a/contract-wrting-edit-party-a";
+import {ContractWrtingEditPartyBPage} from "../pages/contract-wrting-edit-party-b/contract-wrting-edit-party-b";
+import {ContractWritingFinishPage} from "../pages/contract-writing-finish/contract-writing-finish";
+import {ContractWritingFinishAddPartyBPage} from "../pages/contract-writing-finish-add-party-b/contract-writing-finish-add-party-b";
 
 import {BackListenerDirective} from "../directives/back-listener/back-listener"
 
@@ -70,6 +75,11 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ContractManagementIwriting2DetailPage,
     ContractManagementIwriting2RefusePage,
     ContractManagementIwriting2GoPage,
+    ContractWritingPreviewEditPage,
+    ContractWrtingEditPartyAPage,
+    ContractWrtingEditPartyBPage,
+    ContractWritingFinishPage,
+    ContractWritingFinishAddPartyBPage,
   ],
   imports: [
     BrowserModule,
@@ -110,6 +120,11 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ContractManagementIwriting2DetailPage,
     ContractManagementIwriting2RefusePage,
     ContractManagementIwriting2GoPage,
+    ContractWritingPreviewEditPage,
+    ContractWrtingEditPartyAPage,
+    ContractWrtingEditPartyBPage,
+    ContractWritingFinishPage,
+    ContractWritingFinishAddPartyBPage,
   ],
   providers: [
     StatusBar,

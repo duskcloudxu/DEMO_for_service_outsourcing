@@ -9,7 +9,7 @@
   <div class="backgroundBox">
     <img class="background" src="assets/imgs/supervisionResult_top.png">
     <ion-row class="contractNav testBox">
-      <ion-col class="testBox" col-1=""></ion-col>
+      <ion-col class="testBox" col-1=""(click)="back()"></ion-col>
     </ion-row>
   </div>
   <ion-scroll scrollY="true" direction="y">
@@ -19,5 +19,5 @@
 
     <img class="backImg" src="assets/imgs/supervisionResult_bottom.png">
   </div>
-  <div class="finish testBox" (click)="back()"></div>
+  <div class="finish testBox" (click)="return()"></div>
 </ion-content>
