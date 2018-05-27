@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { ContractManagementPage } from '../contract-management/contract-management';
+import { ContractManagementIwriting2GoHandwritingPage } from '../contract-management-iwriting2-go-handwriting/contract-management-iwriting2-go-handwriting';
 /**
  * Generated class for the ContractManagementIwriting2GoPage page.
  *
@@ -19,6 +20,12 @@ export class ContractManagementIwriting2GoPage {
   }
   back() {
     this.navCtrl.pop();
+  }
+  tohandwriting(){
+    this.navCtrl.push(ContractManagementIwriting2GoHandwritingPage);
+  }
+  toContract(){
+    this.navCtrl.push(ContractManagementPage);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContractManagementIwriting2GoPage');

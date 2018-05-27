@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
 import {CallNumber} from "@ionic-native/call-number";
+import { SignaturePadModule } from 'angular2-signaturepad';
 
 import {AboutPage} from '../pages/about/about';
 import {ContactPage} from '../pages/contact/contact';
@@ -37,6 +38,7 @@ import {ContractWrtingEditPartyAPage} from "../pages/contract-wrting-edit-party-
 import {ContractWrtingEditPartyBPage} from "../pages/contract-wrting-edit-party-b/contract-wrting-edit-party-b";
 import {ContractWritingFinishPage} from "../pages/contract-writing-finish/contract-writing-finish";
 import {ContractWritingFinishAddPartyBPage} from "../pages/contract-writing-finish-add-party-b/contract-writing-finish-add-party-b";
+import { ContractManagementIwriting2GoHandwritingPage } from '../pages/contract-management-iwriting2-go-handwriting/contract-management-iwriting2-go-handwriting';
 
 import {BackListenerDirective} from "../directives/back-listener/back-listener"
 
@@ -80,9 +82,11 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ContractWrtingEditPartyBPage,
     ContractWritingFinishPage,
     ContractWritingFinishAddPartyBPage,
+    ContractManagementIwriting2GoHandwritingPage,
   ],
   imports: [
     BrowserModule,
+    SignaturePadModule,
     IonicModule.forRoot(MyApp, {
       tabsHideOnSubPages: 'true',         //ionic3隐藏全部子页面tabs
       mode: 'md'          //把所有平台设置为md风格：
@@ -125,6 +129,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ContractWrtingEditPartyBPage,
     ContractWritingFinishPage,
     ContractWritingFinishAddPartyBPage,
+    ContractManagementIwriting2GoHandwritingPage,
   ],
   providers: [
     StatusBar,
