@@ -68,6 +68,7 @@ XT 18点44分
 ***
 ### slides的滑动到某页无效[solved]
 干他娘的傻逼IONIC，slides的神秘bug使得这玩意根本无效。
+*** 
 
 Edit:经检查发现，Slides如果和[ngCLass]一起使用的话会导致部分功能失效。
 
