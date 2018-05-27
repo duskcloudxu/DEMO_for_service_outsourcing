@@ -53,10 +53,11 @@ ionic g page aliceBob
 
 ## Todo-list
 ### 关于tabs中的图标：
-暂时先拿其他图标应付下，查了下这个在各个系统中都会出现不一样的情况，估计得自己找图自己改。
-XT 2018年5月16日08:53:02
 需要将tab中图标的激活状态颜色改为原型中的蓝绿色。
 LDY 2018.5.26
+
+### 合同起草的页面居中：
+想想看一个居中的统一模板
 
 ***
 ### contract-writing初始点击函数：
@@ -66,13 +67,14 @@ XT 18点44分
 ### directive的尝试
 尝试做了一个back的全局驱动，然而并没有成功，也没有报错，完全没有反应，暂时放置不管，等后面研究。
 ***
-### slides的滑动到某页无效[solved]
+### slides的滑动到某页无效[solved](#)
 干他娘的傻逼IONIC，slides的神秘bug使得这玩意根本无效。
-*** 
+*** <span id="jump">Hello World</span>
 
+##debug log
 Edit:经检查发现，Slides如果和[ngCLass]一起使用的话会导致部分功能失效。
 
-如果用了ngIf的话会导致viewChildren
+如果用了ngIf的话会导致viewChildren获取不到对象，目前没有非常方便的解决方法。
 ***
 ## 参考资料
 [如何新建页面](https://www.jianshu.com/p/0f024a62ba14)
