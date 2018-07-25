@@ -19,13 +19,7 @@ page-contract-writing-finish {
   }
   .selfNavBar {
     border-bottom: solid 1px gainsboro;
-    .title {
-      margin-right: -5px;
-      font-size: 19px;
-    }
     .save {
-      margin-left: -15px;
-      margin-right: -15px;
       color: gainsboro;
     }
   }
@@ -40,7 +34,7 @@ page-contract-writing-finish {
     }
   }
   .previewSlides {
-    height: 180px;
+    height: 160px;
     display: flex;
     align-items: center;
     overflow: scroll;

@@ -2,7 +2,7 @@
 ## 前言
 这是一个使用ionic实现的服务外包客户端，主要配置在安卓上
 ## 配置
-在默认的基础上增加了call-number的模块，开发人员只需增加以下命令：
+在默认的基础上增加了call-number与一个绘画板的模块，开发人员只需增加以下命令：
 ```$xslt
 npm install
 ```
@@ -52,24 +52,31 @@ ionic g page aliceBob
 具体可参照contract->contractWriting 这样的写法
 
 ## Todo-list
-### 关于tabs中的图标：
+### 关于tabs中的图标：[solved]
 需要将tab中图标的激活状态颜色改为原型中的蓝绿色。
 LDY 2018.5.26
 
-### 合同起草的页面居中：
+### 合同起草的页面居中：[solved]
 想想看一个居中的统一模板
 
 ***
-### contract-writing初始点击函数：
+### contract-writing初始点击函数：[solved]
 菜单栏应该一开始就有点击按钮，ionic里如何做到模仿交互现在还是一个问题。
 XT 18点44分
 ***
-### directive的尝试
+### directive的尝试[solved]
 尝试做了一个back的全局驱动，然而并没有成功，也没有报错，完全没有反应，暂时放置不管，等后面研究。
 ***
-### slides的滑动到某页无效[solved](#)
+### slides的滑动到某页无效[solved]
 干他娘的傻逼IONIC，slides的神秘bug使得这玩意根本无效。
 *** <span id="jump">Hello World</span>
+### show1,show2,finish增加固定顶栏[solved]
+***
+### 传递函数的增加,获取日期的方式，标题的定位
+***
+### 原型上新加的div放进去
+***
+### 
 
 ##debug log
 Edit:经检查发现，Slides如果和[ngCLass]一起使用的话会导致部分功能失效。

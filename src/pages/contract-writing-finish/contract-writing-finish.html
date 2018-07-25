@@ -12,16 +12,19 @@
     </ion-slide>
   </ion-slides>
   <div class="selfNavBar">
-    <img src="assets/imgs/leftArrow.png" alt="" back-listener="" (click)="back()">
-    <div class="flex-grow"></div>
-    <div class="title">填写文字信息</div>
-    <div class="flex-grow"></div>
-    <div class="save">存至草稿箱</div>
+    <div class="flex-grow">
+      <img src="assets/imgs/leftArrow.png" alt="" back-listener="" >
+    </div>
+    <div class="title">填写文件信息</div>
+    <div class="flex-grow flex">
+      <div class="flex-grow"></div>
+      <div class="save">存至草稿箱</div>
+    </div>
   </div>
   <div class="textarea flex-center">
     <div margin-left="" margin-right="">文档名称</div>
     <input type="text" class="flex-grow">
-    <img src="../../assets/imgs/download.png" alt="">
+    <img src="assets/imgs/download.png" alt="">
   </div>
   <div class="previewSlides">
     <ion-scroll scrollX="true" direction="x" class="scroll">
@@ -32,7 +35,7 @@
       </ion-row>
     </ion-scroll>
   </div>
-  <div class="deadline flex-verticalcenter " padding-left="">
+  <div class="deadline flex-verticalcenter " padding-left="" margin-top="">
     <div class="">签署截止日期</div>
     <div class="flex-grow"></div>
     <div class="itemContainer">

@@ -1,26 +1,25 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>登录</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content>
-  <ion-item>
-    <ion-label fixed>账号</ion-label>
-    <ion-input type="text" placeholder="请输入账号" #username></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label fixed>密码</ion-label>
-    <ion-input type="password" placeholder="请输入密码" #password></ion-input>
-  </ion-item>
-  <ion-item no-lines>
-    <label item-right>记住密码</label>
-    <ion-toggle></ion-toggle>
-  </ion-item>
-
-  <div style="text-align: center; margin-left: 30px; margin-right: 30px;">
-    <button ion-button block color="danger" (click)="logIn(username, password)">
-      登录
-    </button>
+  <div class="centerContainer flex-center flex">
+    <div>
+      <ion-row class="flex flex-center">
+        <img src="assets/imgs/login.png" alt="" class="icon">
+      </ion-row>
+      <ion-row class="underline flex flex-verticalcenter">
+        <div class="">手机号</div>
+        <input type="text" class="flex-grow">
+        <img src="assets/imgs/delete.png" alt="" class="add">
+      </ion-row>
+      <ion-row class="underline flex flex-verticalcenter">
+        <div class="">验证码</div>
+        <input type="text" class="flex-grow">
+        <button class="checkSend flex-center">发送验证码</button>
+      </ion-row>
+      <ion-row class="loginButton flex-center flex" margin-top="" (click)="logIn()">
+        登陆
+      </ion-row>
+      <ion-row class="hotNumber flex flex-center">
+        <div>客服热线：400 8591 580</div>
+      </ion-row>
+    </div>
   </div>
 </ion-content>

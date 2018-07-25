@@ -16,14 +16,16 @@
 // automatically applied to the <body> element in the app.
 
 //app里面的颜色
+@import "../theme/variables";
 $myColorBlue:#23d1c0;
-
+$background-color:#efefef;
+//$tabs-md-tab-color-active:$myColorBlue;
 ::-webkit-scrollbar {
   display: none !important;
 }
 
 ion-content {
-  background-color: #efefef!important;
+  background-color: $background-color!important;
 }
 
 //flex的快速书写
@@ -41,6 +43,7 @@ ion-content {
 }
 .flex-grow{
   flex-grow: 1;
+  flex-basis: 0;
 }
 .cancelTitleWidth{
   .toolbar-title{
@@ -65,7 +68,7 @@ ion-content {
 
 //用来查看透明元素有没有框定所需的区域
 .testBox{
-  border: red 1px solid;
+  //border: red 1px solid;
 }
 
 
@@ -80,8 +83,12 @@ ion-content {
     height: 20px;
   }
   .title{
+    display: flex;
+    flex-basis:0;
+    flex-grow:1;
     font-size: 17px;
-    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
   }
 }
 

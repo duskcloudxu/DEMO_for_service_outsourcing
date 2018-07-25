@@ -12,19 +12,21 @@
     <ion-row class="back">
       <ion-col col-1 class="testBox" (click)="back()"></ion-col>
     </ion-row>
-    <div class="bottomBar">
-
-      <img class="backImg" src="assets/imgs/go2.png">
-      <ion-row class="back">
-        <ion-col col-3 class="testBox"></ion-col>
-        <ion-col col-3 class="testBox" (click)="tohandwriting()"></ion-col>
-        <ion-col col-3 class="testBox"></ion-col>
-        <ion-col col-3 class="testBox" (click)="toContract()"></ion-col>
-
-      </ion-row>
-
-    </div>
-
+    <img src="{{signPicture}}" class="testBox signPic">
+    <div class="signDate testBox flex flex-center">{{myDate}}</div>
+  </div>
+  <div class="bottomBar">
+    <img class="backImg" src="assets/imgs/go2.png">
+    <ion-row class="back">
+      <ion-col col-3 class="testBox"></ion-col>
+      <ion-col col-3 class="testBox" (click)="tohandwriting()"></ion-col>
+      <ion-col col-3 class="testBox">
+        <ion-item>
+          <ion-datetime displayFormat="YYYY.MM.DD" min="2016" max="2020-10-31" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+      </ion-col>
+      <ion-col col-3 class="testBox" (click)="toContract()"></ion-col>
+    </ion-row>
   </div>
 
 </ion-content>

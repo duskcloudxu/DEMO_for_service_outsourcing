@@ -20,11 +20,15 @@ export class ContractManagementIwriting2GoHandwritingPage {
 
   imageData: String;
   isEmpty = true;
+
   private signaturePadOptions: Object = { // passed through to szimek/signature_pad constructor
     'minWidth': 1,
     'canvasHeight': 600
   };
+  private callback;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.callback = this.navParams.get("callback")
   }
   back() {
     this.navCtrl.pop();
@@ -34,6 +38,7 @@ export class ContractManagementIwriting2GoHandwritingPage {
     this.signaturePad.set('canvasWidth', this.contentEl.nativeElement.offsetWidth); // set szimek/signature_pad options at runtime
     this.signaturePad.clear(); // invoke functions from szimek/signature_pad API
   }
+
   drawStart() {
     // will be notified of szimek/signature_pad's onBegin event
     console.log('begin drawing');
@@ -43,10 +48,12 @@ export class ContractManagementIwriting2GoHandwritingPage {
     // will be notified of szimek/signature_pad's onEnd event
     this.isEmpty = true;
   }
-
   save() {
     this.imageData = this.signaturePad.toDataURL();
-    this.navCtrl.push(ContractManagementIwriting2GoHandwritingPage);
+    console.log(this.imageData);
+    this.callback(this.imageData).then(()=>{
+      this.navCtrl.pop();
+    });
   }
 
   empty() {

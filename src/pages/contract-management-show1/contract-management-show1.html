@@ -5,17 +5,16 @@
   Ionic pages and navigation.
 -->
 <ion-content>
-  <div class="backgroundBox">
-
-    <img class="background" src="assets/imgs/show1.png">
-    <img class="next" src="assets/imgs/show11.png">
-
-    <ion-row class="back">
-      <ion-col col-1 class="testBox" (click)="back()"></ion-col>
-    </ion-row>
-    
-
+  <div class="selfNavBar">
+    <div class="flex-grow">
+      <img src="assets/imgs/leftArrow.png" alt="" back-listener="">
+    </div>
+    <div class="title">合同管理</div>
+    <div class="flex-grow flex"></div>
   </div>
+  <ion-scroll scrollY="true">
+    <img class="background" src="assets/imgs/show1.png">
+  </ion-scroll>
 
 </ion-content>
 
