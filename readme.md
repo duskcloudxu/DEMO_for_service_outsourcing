@@ -1,14 +1,17 @@
-# 说明
-## 前言
-这是一个使用ionic实现的服务外包客户端，主要配置在安卓上
-## 配置
+# 说明 | development doc
+## 前言 | things at first
+这是一个使用ionic实现的服务外包客户端，主要配置在安卓上。
+
+it is a demo of our service outsourcing competition project, mainly developed at web browser(chrome) and android platform.
+
+## 配置 | get started
 在默认的基础上增加了call-number与一个绘画板的模块，开发人员只需增加以下命令：
 ```$xslt
 npm install
 ```
 
 
-## 页面与原型的对应
+## 页面与原型的对应 | correlation to prototype
 login->登陆页面
 
 contact->会话
@@ -22,10 +25,9 @@ contract-supervision->合同审核
 contract-management->合同管理
 
 contract-consultant->法律助手
-> 好吧我知道这个容易造成误解但是我们又不写contact
 
 about->我的
-## 开发注意事项!important
+## 开发注意事项 | development notes
 ### 1. 
 图片不能用相对路径，否则会造成安卓无法读取的情况，统一放在
 > asset/imgs/
@@ -51,40 +53,29 @@ ionic g page aliceBob
 ```
 具体可参照contract->contractWriting 这样的写法
 
-## Todo-list
-### 关于tabs中的图标：[solved]
-需要将tab中图标的激活状态颜色改为原型中的蓝绿色。
-LDY 2018.5.26
+## 界面预览|preview
 
-### 合同起草的页面居中：[solved]
-想想看一个居中的统一模板
+![](previewImg\0.png)
+![](previewImg\1.png)
+![](previewImg\2.png)
+![](previewImg\3.png)
+![](previewImg\4.png)
+![](previewImg\5.png)
+![](previewImg\6.png)
+![](previewImg\7.png)
+![](previewImg\8.png)
+![](previewImg\9.png)
+![](previewImg\10.png)
+![](previewImg\11.png)
+![](previewImg\12.png)
+![](previewImg\13.png)
+![](previewImg\14.png)
+![](previewImg\15.png)
+![](previewImg\16.png)
+![](previewImg\17.png)
+![](previewImg\18.png)
 
-***
-### contract-writing初始点击函数：[solved]
-菜单栏应该一开始就有点击按钮，ionic里如何做到模仿交互现在还是一个问题。
-XT 18点44分
-***
-### directive的尝试[solved]
-尝试做了一个back的全局驱动，然而并没有成功，也没有报错，完全没有反应，暂时放置不管，等后面研究。
-***
-### slides的滑动到某页无效[solved]
-干他娘的傻逼IONIC，slides的神秘bug使得这玩意根本无效。
-*** <span id="jump">Hello World</span>
-### show1,show2,finish增加固定顶栏[solved]
-***
-### 传递函数的增加,获取日期的方式，标题的定位
-***
-### 原型上新加的div放进去
-***
-### 
 
-##debug log
-Edit:经检查发现，Slides如果和[ngCLass]一起使用的话会导致部分功能失效。
-
-如果用了ngIf的话会导致viewChildren获取不到对象，目前没有非常方便的解决方法。
-***
-## 参考资料
-[如何新建页面](https://www.jianshu.com/p/0f024a62ba14)
 
 
 
